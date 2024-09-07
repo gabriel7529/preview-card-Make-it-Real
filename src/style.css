@@ -61,6 +61,10 @@ body {
   gap: 10px;
 }
 
+hr{
+  border-color: #314d71;
+}
+
 .card__creator-avatar {
   width: 30px;
   height: 30px;
