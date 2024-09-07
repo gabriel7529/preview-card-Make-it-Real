@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div class="card">
+    <img src="../images/image-equilibrium.jpg" alt="Equilibrium #3429" class="card__image">
+    <h1 class="card__title">Equilibrium #3429</h1>
+    <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
+    <div class="card__details">
+        <span class="card__price"><img src="../images/icon-ethereum.svg"> 0.041 ETH</span>
+        <span class="card__time"><img src="../images/icon-clock.svg"> 3 days left</span>
+    </div>
+    <hr>
+    <div class="card__creator">
+        <img src="../images/image-avatar.png" alt="Jules Wyvern" class="card__creator-avatar">
+        <p class="card__creator-text">Creation of <span class="card__creator-name">Jules Wyvern</span></p>
+    </div>
 
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
 </body>
 </html>
