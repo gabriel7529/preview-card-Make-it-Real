@@ -1,6 +1,6 @@
-# Make It Real - NAME OF THE PROJECT
+# Make It Real - NFT preview card component
 
-This is a solution to the _______ project of the Make It Real course.
+This is a solution to the NFT preview card component project of the Make It Real course.
 
 ## Table of contents
 
@@ -19,22 +19,14 @@ This is a solution to the _______ project of the Make It Real course.
 ## Overview
 
 ### The challenge
-
 Users should be able to:
 
-- Task 1
-- Task 2
+- A preview-card is created using HTML and CSS, following the BEM methodology.
+- It is made with a responsive design for mobile devices.
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
+![image](https://github.com/user-attachments/assets/f9a8944e-b2ce-46ac-91e1-db27290817bf)
 
 ## My process
 
@@ -47,41 +39,49 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to effectively use the BEM (Block, Element, Modifier) methodology to structure and organize my CSS code. BEM helps create a clear, maintainable, and scalable structure by breaking down each component into reusable blocks, elements, and modifiers. Here's how the methodology is applied in the following code snippet:
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+/* BEM Element: card__time */
+.card__time {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  justify-content: center;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+/* BEM Element: card__creator */
+.card__creator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+hr {
+  border-color: #314d71;
+}
+
+/* BEM Element: card__creator-avatar */
+.card__creator-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ### Continued development
+In future projects, I want to continue focusing on a few key areas:
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- Responsive Design: While I have successfully created responsive layouts for mobile devices, I want to refine my understanding of more advanced responsive techniques. This includes improving my knowledge of media queries for different screen sizes and optimizing layouts for tablet and desktop resolutions.
+- CSS Grid & Flexbox: I found Flexbox useful for aligning elements, but I want to deepen my understanding of combining Flexbox with CSS Grid for more complex layouts. It will help me become more proficient in creating advanced layouts without relying heavily on custom spacing or positioning.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- [BEM](https://animaticss.com/articulo/que-es-bem-css/) - This was an excellent resource for learning how to structure CSS classes following the BEM methodology. It helped me understand the naming conventions and how to break down components into Blocks, Elements, and Modifiers.
+- [CSS Flexbox Guide](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - his guide helped me better understand Flexbox and how to use it to align elements efficiently. I used it to align content in my card layout, especially for positioning details like the price and time within the .card__details class..
 
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I would like to give a special thanks to the CSS and frontend development community for their invaluable resources and examples. Their tutorials and guides helped me improve my skills in both BEM methodology and responsive design. Additionally, I'd like to acknowledge my peers and mentors who provided feedback and inspiration throughout this project.
